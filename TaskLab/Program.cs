@@ -3,8 +3,13 @@
 // var taskLab1 = new TaskLab1();
 // await taskLab1.情境1_馬上await();
 
-var taskLab2 = new TaskLab2();
-await taskLab2.情境2_之後await();
+// var taskLab2 = new TaskLab2();
+// await taskLab2.情境2_之後await();
+
+var taskLab3 = new TaskLab3();
+var task = taskLab3.補充與練習1_自訂Task物件並加上狀態("error");
+Console.WriteLine(task.IsFaulted);
+
 
 /* 關於討論需要更正的點
  1. task pool 與 thread pool 是平等的並沒有上下之分，只是管理及運用thread的方式不同
